@@ -15,7 +15,10 @@
     overflow: hidden;  //Overflow:hidden just says if text flows outside of this element the scrollbars don't show.
     background-color: #333;
 }
-  
+
+.parent-menu{
+    width: 100%;
+}
 .parent-menu li {
     float: left;
 }
