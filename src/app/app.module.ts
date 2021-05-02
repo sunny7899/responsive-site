@@ -12,11 +12,11 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'contact', component: ContactComponent },
+  { path: 'contact', component: ContactComponent }, // master is contact comp
   {
     path: '',
     redirectTo: '/home',
-    pathMatch: 'full'    
+    pathMatch: 'full'
   },
   {
     path: '**',

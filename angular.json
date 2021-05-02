@@ -13,6 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "aot": true,
             "outputPath": "docs/",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -30,6 +31,12 @@
           },
           "configurations": {
             "production": {
+              "budgets": [
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
+                }
+              ],
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
@@ -125,5 +132,8 @@
       }
     }
   },
-  "defaultProject": "updatedang"
+  "defaultProject": "updatedang",
+  "cli": {
+    "analytics": "644c424c-4f2e-41fa-a3ce-2d7bae2b4fba"
+  }
 }
